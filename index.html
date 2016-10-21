@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="giphytags" ng-controller="giphytagsController">
+<head>
+    <meta charset="UTF-8">
+    <title>Giphy Tag Extractor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Get the tags for a Giphy URL" />
+    <link rel="stylesheet" href="/static/foundation.min.css">
+    <script type="text/javascript" src="/static/angular.min.js"></script>
+    <script type="text/javascript" src="/app.js"></script>
+</head>
+<body>
+    <form class="columns small-6" ng-submit="getTags()">
+        <p>Enter Giphy image URL:</p>
+        <p><input type="text" ng-model="giphyurl" placeholder="http://media.giphy.com/media/10zxDv7Hv5RF9C/giphy.gif"></p>
+        <p><a type="button" class="small button" ng-click="getTags()">Get Tags</a></p>
+        <h3>{{result}}</h3>
+    </form>
+</body>
+</html>
