@@ -6,7 +6,7 @@ app.controller('giphytagsController', function($scope, $http) {
 
     $scope.getTags = function() {
         $scope.result = 'Loading...';
-        var re = /.*\/media\/(.*)\/giphy.gif/;
+        var re = /.*\/media\/(.*)\/giphy[^\/]+.gif/;
         var match = re.exec($scope.giphyurl);
         if(!match || match.length<1) {
             return $scope.result = "That doesn't appear to be a Giphy image URL";
