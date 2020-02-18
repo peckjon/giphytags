@@ -12,7 +12,7 @@ The frontend is some pretty simple AngularJS.  The backend is set up to run on G
 
 ## Sample
 
-http://giphytags.appspot.com
+https://giphytags.appspot.com
 
 ## Contributors
 
