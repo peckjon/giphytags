@@ -11,7 +11,7 @@ app.controller('giphytagsController', function($scope, $http) {
         if(!match || match.length<1) {
             return $scope.result = "That doesn't appear to be a Giphy image URL";
         }
-        var id = match[1];
+        var id = match[0];
         $http({method:'POST',url:'/json/giphytags',data:{id:id}}).then(
             function(response) {
                 $scope.result = response.data;
